@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="'en">
+
+<head>
+    <title>My Book List</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <img src="./img/bool-logo.png" alt="logo">
+        <h3> My <span class="book">BOOK</span> List</h3>
+    </header>
+
+    <section>
+        <form class ="my-form" action="submit">
+                
+            <div class="title">
+                <p>Title</p>
+                <div class="filler"></div>
+                <input type="text" name="title">
+                
+            </div>
+
+            <div class="author">
+                <p>Author</p>
+                <div class="filler"></div>
+                <input type="text" name="author">
+                
+            </div>
+
+            <div class="isbn">
+                <p>ISBN#</p>
+                <div class="filler"></div>
+                <input type="text" name="isbn">
+                
+            </div>
+            
+            <div class="btn">
+            <button type="submit">Add Book</button>
+            </div>
+
+        </form>
+</section>
+<section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th id="lasthead"></th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+
+        </table>
+    </section>
+</body>
+
+<script src="./js/script.js"></script>
+
+</html>
+
