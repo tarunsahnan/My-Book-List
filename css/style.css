@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-
 }
 
 .main-header img{
@@ -11,7 +10,7 @@
 }
 
 .book{
-    color:rgb(92, 75, 185);
+    color:rgb(12, 105, 158);
     font-size:1.5cm;
     font-style: oblique;
 }
@@ -21,7 +20,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1cm;
+    font-size: 0.9cm;
+    color: rgb(71, 179, 241);
 }
 
 .my-form{
@@ -55,6 +55,11 @@ input[type=text]{
 
 .btn{
     display:initial;
+    padding-top: 10px;
+}
+
+.btn button{
+    width: 100%;
 }
 
 .title{
@@ -85,25 +90,29 @@ font-weight: bolder;
 }
 
 table{
+
     table-layout: fixed;
     margin: auto;
-    margin-top: 10px;
+    transform: translate(10%);
+    margin-top: 40px;
     width: 80%;
     /* border: 1px solid black; */
     text-align: center;
     column-gap: 40px;
 }
 
-
 #last, #lasthead{
     border: none;
     background-color: white;
 }
+
 thead{
-    background-color: rgb(182, 170, 247);
+    background-color: rgb(124, 124, 126);
+    height: 30px;
+    color: aliceblue;
 }
 tbody tr:nth-child(even){
-    background-color: rgb(214, 213, 248);
+    background-color: rgb(186, 185, 190);
 }
 tbody tr:nth-child(odd){
     background-color: rgb(222, 219, 223);
@@ -112,17 +121,21 @@ tbody tr:nth-child(odd){
 .delete{
     background-color: rgb(248, 42, 42);
     color: aliceblue;
-    width: 20%;
+    width: 20px;
     height: 20px;
-    margin-left: 1px;
     margin-top: 5px;
     margin-bottom: 5px;
+    display: flex;
+    align-items: left;
+    padding-left: 3px;
+    margin-left: 10px;
+    text-align: center;
 }
 
 .error{
     margin: 20px auto;
     background-color: rgb(250, 20, 20);
-    width: 60%;
+    width: 40%;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -133,7 +146,7 @@ tbody tr:nth-child(odd){
 .success{
     margin: 20px auto;
     background-color: rgb(17, 158, 17);
-    width: 60%;
+    width: 40%;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -142,15 +155,12 @@ tbody tr:nth-child(odd){
 }
 
 @media only screen and (max-width: 1000px){
-
     .title input{
         margin-left:35px;
     }
-
     .author input{
         margin-left:14px;
     }
-
     .isbn input{
         margin-left:20px;
     }
